@@ -45,7 +45,7 @@ var patchStatsTable = function ($table, $) {
   var $joinsHeader = $header.find('.column_joins_count_view');
   var isSummaryTable = !$joinsHeader.length;
 
-  if (isSummaryTable) {
+  if (!isSummaryTable) {
 
 
     $header.find('.last_column').removeClass('last_column');
